@@ -2,7 +2,7 @@
 
 Tutorial by Traverse Media: https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU&index=1
 
-## Step by step guide
+## Step by step guide to setup SASS compiler
 
 -   Create dist folder (this is where our HTML, compiled CSS, JavaScript, images etc. goes) - create index.html
 
@@ -27,3 +27,26 @@ Tutorial by Traverse Media: https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLi
 -- recursive => needed to avoid issues with partials and auto-reload
 
 -   `npm run sass` to run the script. Now if we do changes in the main.scss file, it should compile it to our main.css file
+
+## Things I learned
+
+### fontawesome.com icons
+
+Adding fontawesome link in index.html will make a lot of icons like twitter, facebook etc. available. They can be used by adding HTML tags like `<i class="fab fa-twitter"></i>`. Classes need to be checked on fontawesome.com
+
+### SASS and styling
+
+-   Nested classes: `h1 { .heading () }` will style any h1-nested tag which has .heading as class. `h1 { &.heading {} }` will style h1 with .heading as class.
+
+-   Mixin: Are like functions. They can be declared with `@mixin mixinName { statement }` and be used with `@include mixinName`.
+
+-   rem: A rem is a multiplyer of the HTML tag font-size (default 1rem = 16px)
+
+-   em: An em is a multiplyer of the parent tag font-size
+
+-   lighten(): takes 2 arguments, color and a number. This will lighten the color: `lighten($primary-color, 2);`. Lighten is changing the color, but if we want some opacity to see a background color, we have to wrap it in a rgba function `background: rgba(lighten($primary-color, 2), 0.5);`
+
+-   CSS transitions: something that takes time to do. For example sliding something in, fading something out, changing color etc.
+    transition takes 3 arguments: (what do we move) (how many seconds will it take) (motion / how do we move)
+
+-   Sudo element: before or after elements can be used instead of additional html elements. Here instead of creating a div for the grey overlay, we can use `:after { content: '', .... }`.
