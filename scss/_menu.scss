@@ -10,7 +10,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: setTextColor($primary-color);
         @include easeOut;
     }
     // Rotate into X with menu lines
@@ -99,7 +99,7 @@
         flex-direction: column;
         font-size: 30px;
         font-weight: 300;
-        color: #fff;
+        color: setTextColor($primary-color);
         text-decoration: none;
         text-transform: uppercase;
         padding: 1rem 0;

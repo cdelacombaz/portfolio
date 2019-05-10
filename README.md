@@ -1,6 +1,6 @@
 # Create responsive portfolio website
 
-Tutorial by Traverse Media: https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU&index=1
+This website has been created following a tutorial from Traverse Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills.
 
 ## Step by step guide to setup SASS compiler
 
@@ -36,11 +36,17 @@ Adding fontawesome link in index.html will make a lot of icons like twitter, fac
 
 ### SASS and styling
 
+-   Responsive design: By creating mixins for different display sizes, we can add styling to each of them. The displayed screen size in pixel will then get the respective style and make it look good on any configured media. For example, the grid in my about-me section is reduce to 1 fraction instead of 3 when seen on mobiles.
+
 -   Nested classes: `h1 { .heading () }` will style any h1-nested tag which has .heading as class. `h1 { &.heading {} }` will style h1 with .heading as class.
 
 -   Mixin: Are like functions. They can be declared with `@mixin mixinName { statement }` and be used with `@include mixinName`.
 
+-   Mixin are not functions: Mixins can not return anything. We need to write a function to manage the text color depending on the background color being light or dark. `@function myFunctionName($myParamName) { statement }` To use a function we can call it without the include prefix. `myFunctionName($myArgName)`
+
 -   For loop in SASS: `@for $x from 1 through 4 {.nav-item:nth-child(#{$x}) { styling }}` \$x is a variable we set and to use it in the loop, we need to wrap it in a number sign `#{$var}`. I used this to slide in the nav items with a delay.
+
+-   Create a sticky footer: We can use following code to set the minimum height of the content to 100 viewheight - the height of the footer `min-height: calc(100vh - 60px);`
 
 -   rem: A rem is a multiplyer of the HTML tag font-size (default 1rem = 16px)
 
@@ -54,3 +60,7 @@ Adding fontawesome link in index.html will make a lot of icons like twitter, fac
 -   CSS translate3d:
 
 -   Sudo element: before or after elements can be used instead of additional html elements. Here instead of creating a div for the grey overlay, we can use `:after { content: '', .... }`.
+
+-   `&copy;` is the HTML entity for the copyright symbol
+
+-   Thanks to emmet we can type `Lorem30` or any other number and then tab. This will create a sample text with 30 words.
