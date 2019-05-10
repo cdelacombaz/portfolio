@@ -40,13 +40,17 @@ Adding fontawesome link in index.html will make a lot of icons like twitter, fac
 
 -   Mixin: Are like functions. They can be declared with `@mixin mixinName { statement }` and be used with `@include mixinName`.
 
+-   For loop in SASS: `@for $x from 1 through 4 {.nav-item:nth-child(#{$x}) { styling }}` \$x is a variable we set and to use it in the loop, we need to wrap it in a number sign `#{$var}`. I used this to slide in the nav items with a delay.
+
 -   rem: A rem is a multiplyer of the HTML tag font-size (default 1rem = 16px)
 
 -   em: An em is a multiplyer of the parent tag font-size
 
--   lighten(): takes 2 arguments, color and a number. This will lighten the color: `lighten($primary-color, 2);`. Lighten is changing the color, but if we want some opacity to see a background color, we have to wrap it in a rgba function `background: rgba(lighten($primary-color, 2), 0.5);`
+-   lighten() and darken(): takes 2 arguments, color and a number. This will lighten or darken the color the color: `lighten($primary-color, 2);`. Lighten is changing the color, but if we want some opacity to see a background color, we have to wrap it in a rgba function `background: rgba(lighten($primary-color, 2), 0.5);`.
 
 -   CSS transitions: something that takes time to do. For example sliding something in, fading something out, changing color etc.
     transition takes 3 arguments: (what do we move) (how many seconds will it take) (motion / how do we move)
+
+-   CSS translate3d:
 
 -   Sudo element: before or after elements can be used instead of additional html elements. Here instead of creating a div for the grey overlay, we can use `:after { content: '', .... }`.
