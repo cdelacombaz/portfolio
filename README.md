@@ -2,9 +2,6 @@
 
 This website has been created following a tutorial from Traversy Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills.
 
-
-## What I have learned by doing this project
-
 ### The browser can’t read scss. We need to set up a compiler to compile it to CSS
 
 -   In the project folder run `npm init` to install package.json file, which is like a manifest
