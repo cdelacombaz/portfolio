@@ -2,7 +2,9 @@
 
 This website has been created following a tutorial from Traversy Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills.
 
-### The browser can’t read scss. We need to set up a compiler to compile it to CSS
+### Things I learned by doing this project
+
+#### The browser can’t read scss. We need to set up a compiler to compile it to CSS
 
 -   In the project folder run `npm init` to install package.json file, which is like a manifest
 
@@ -22,13 +24,11 @@ This website has been created following a tutorial from Traversy Media. I wanted
 
 -   `npm run sass` to run the script. Now if we do changes in the main.scss file, it should compile it to our main.css file
 
-## Things I learned
-
-### fontawesome.com icons
+#### fontawesome.com icons
 
 Adding fontawesome link in index.html will make a lot of icons like twitter, facebook etc. available. They can be used by adding HTML tags like `<i class="fab fa-twitter"></i>`. Classes need to be checked on fontawesome.com
 
-### SASS and styling
+#### SASS and styling
 
 -   Responsive design: By creating mixins for different display sizes, we can add styling to each of them. The displayed screen size in pixel will then get the respective style and make it look good on any configured media. For example, the grid in my about-me section is reduce to 1 fraction instead of 3 when seen on mobiles.
 
