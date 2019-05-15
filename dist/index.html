@@ -13,16 +13,24 @@
         <link rel="stylesheet" href="css/main.css" />
         <title>Cedric's Portfolio</title>
     </head>
-    <body id="bg-img">
-        <header>
-            <div class="fullscreen-video-wrap">
-                <video
-                    src="../dist/background-video/work.mp4"
-                    autoplay=""
-                    loop=""
-                ></video>
-            </div>
 
+    <body id="bg-img">
+        <div class="background-video">
+            <video
+                poster="../dist/background-video/work.jpg"
+                autoplay=""
+                loop=""
+                muted
+            >
+                <source src="../dist/background-video/work.mp4" />
+                <source src="../dist/background-video/work.ogv" />
+                <source src="../dist/background-video/work.webm" />
+            </video>
+        </div>
+
+        <div class="overlay"></div>
+
+        <header>
             <div class="menu-btn">
                 <div class="btn-line"></div>
                 <div class="btn-line"></div>
@@ -66,14 +74,14 @@
                 Junior Full-Stack Web Developer (JavaScript & Python)
             </h2>
             <div class="icons">
-                <a href="#!">
+                <a href="https://www.linkedin.com/in/cdelacombaz/">
                     <i class="fab fa-linkedin fa-2x"></i>
                 </a>
-                <a href="#!">
-                    <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a href="#!">
+                <a href="https://gitlab.propulsion-home.ch/cdelacombaz">
                     <i class="fab fa-gitlab fa-2x"></i>
+                </a>
+                <a href="https://github.com/cdelacombaz">
+                    <i class="fab fa-github fa-2x"></i>
                 </a>
             </div>
         </main>

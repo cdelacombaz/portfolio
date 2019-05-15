@@ -1,12 +1,6 @@
 # Create responsive portfolio website
 
-This website has been created following a tutorial from Traverse Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills.
-
-## Step by step guide to setup SASS compiler
-
--   Create dist folder (this is where our HTML, compiled CSS, JavaScript, images etc. goes) - create index.html
-
--   Create css folder - create main.scss (this is the main file. All other scss files will be partials that are imported into this main file)
+This website has been created following a tutorial from Traversy Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills.
 
 ### The browser can’t read scss. We need to set up a compiler to compile it to CSS
 
