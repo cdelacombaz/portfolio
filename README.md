@@ -1,8 +1,7 @@
 # Create responsive portfolio website
 
-This website has been created following a tutorial from Traversy Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills.
+This website has been created following a tutorial from Traversy Media. I wanted to have a portfolio to show to potential employeers and also refresh and enhance my SASS skills. Here are some notes about what I learned working on this project:
 
-### Things I learned by doing this project
 
 #### The browser can’t read scss. We need to set up a compiler to compile it to CSS
 
