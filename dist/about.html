@@ -1,141 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="css/main.css" />
-        <title>About Me</title>
-    </head>
-    <body>
-        <header>
-            <div class="menu-btn">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About Me</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
             </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="about.html" class="nav-link">
+                        About me
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="work.html" class="nav-link">
+                        My work
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <nav class="menu">
-                <div class="menu-branding">
-                    <div class="portrait"></div>
+    <main id="about">
+        <h1 class="lg-heading">
+            About <span class="text-secondary">Me</span>
+        </h1>
+        <h2 class="sm-heading">
+            Let me tell you a few things...
+        </h2>
+        <div class="about-info">
+            <img src="img/portrait.png" alt="Cedric Delacombaz" class="bio-image" />
+            <div class="bio">
+                <h3 class="text-secondary">
+                    BIO
+                </h3>
+                <br>
+                Hi! My name is Cedric Delacombaz. After completing a 3 months Full-Stack development bootcamp, I am
+                currently working as teaching assitant for this same course.
+                I am continuing to learn and expand my skills and looking for an opportunity as a junior web developer,
+                be it Front-End, Backend or Full-Stack.
+                </br></br>
+                In my spare time I play unihockey, video games, cook or enjoy watching good series and movies.
+                </p>
+            </div>
+            <div class="skill skill-1">
+                <h3>Web development skills</h3>
+                <h6>Beginner to intermediate level</h6>
+                <div class="dev-fields">
+                    <p>Frontend: JavaScript, HTML, CSS, SASS, React, Redux</p>
+                    <p>Backend: Python, Django REST framework, Postgres</p>
+                    <p>DevOps: Docker, Gitlab with CI/CD, NGINX</p>
                 </div>
-                <ul class="menu-nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">
-                            Home
-                        </a>
-                    </li>
-                    <li class="nav-item current">
-                        <a href="about.html" class="nav-link">
-                            About me
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="work.html" class="nav-link">
-                            My work
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <main id="about">
-            <h1 class="lg-heading">
-                About <span class="text-secondary">Me</span>
-            </h1>
-            <h2 class="sm-heading">
-                Let me tell you a few things...
-            </h2>
-            <div class="about-info">
-                <img
-                    src="img/portrait.png"
-                    alt="Cedric Delacombaz"
-                    class="bio-image"
-                />
-                <div class="bio">
-                    <h3 class="text-secondary">
-                        BIO
-                    </h3>
-                    <br>
-                        Hi! My name is Cedric Delacombaz. I am currently studying
-                        hard to make a career change and become a web developer
-                        in Zürich, Switzerland. After finishing an intensive
-                        coding bootcamp at Propulsion Academy AG in April 2019,
-                        I am continuing to learn and expand my skills with some projects 
-                        and looking for an opportunity as a junior web developer with a focus on Front-End. 
-                    </br></br> 
-                        In my spare time I play unihockey, video games, cook or enjoy watching good series and movies.
-                    </p>
-                </div>
-                <div class="skill skill-1">
-                    <h3>Web development skills</h3>
-                    <h6>Beginner to intermediate level</h6>
-                    <div class="dev-fields">
-                        <p>Frontend: JavaScript, HTML, CSS, SASS, React, Redux</p>
-                        <p>Backend: Python, Django REST framework, Postgres</p>
-                        <p>DevOps: Docker, Gitlab with CI/CD, NGINX</p>
+            </div>
+            <div class="skill skill-2">
+                <h3>Languages</h3>
+                <div class="languages">
+                    <div class="language">
+                        <p>English</p>
+                        <p>Proficient</p>
                     </div>
-                </div>
-                <div class="skill skill-2">
-                    <h3>Languages</h3>
-                    <div class="languages">
-                        <div class="language">
-                            <p>English</p>
-                            <p>Proficient</p>
-                        </div>
-                        <div class="language">
-                            <p>German</p>
-                            <p>Native</p>
-                        </div>
-                        <div class="language">
-                            <p>Swiss-German</p>
-                            <p>Native</p>
-                        </div>
-                        <div class="language">
-                            <p>French</p>
-                            <p>Native</p>
-                        </div>
-                        <div class="language">
-                            <p>Portuguese</p>
-                            <p>Basic - intermediate</p>
-                        </div>
+                    <div class="language">
+                        <p>German</p>
+                        <p>Native</p>
                     </div>
-                </div>
-                <div class="skill skill-3">
-                    <h3>Professional experience</h3>
-                    <div class="jobs">
-                        <div class="job">
-                            <p>Financial Accountant</p>
-                            <p>VAT, AP & AR, Year-End-Closing</p>
-                        </div>
-                        <div class="job">
-                            <p>Travel Agent</p>
-                            <p>Consulting and sales</p>
-                        </div>
-                        <div class="job">
-                            <p>Clerk</p>
-                            <p>Consulting and sales</p>
-                        </div>
+                    <div class="language">
+                        <p>Swiss-German</p>
+                        <p>Native</p>
+                    </div>
+                    <div class="language">
+                        <p>French</p>
+                        <p>Native</p>
+                    </div>
+                    <div class="language">
+                        <p>Portuguese</p>
+                        <p>Basic - intermediate</p>
                     </div>
                 </div>
             </div>
-        </main>
+            <div class="skill skill-3">
+                <h3>Professional experience</h3>
+                <div class="jobs">
+                    <div class="job">
+                        <p>Financial Accountant</p>
+                        <p>VAT, AP & AR, Year-End-Closing</p>
+                    </div>
+                    <div class="job">
+                        <p>Travel Agent</p>
+                        <p>Consulting and sales</p>
+                    </div>
+                    <div class="job">
+                        <p>Clerk</p>
+                        <p>Consulting and sales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <footer id="main-footer">
-            Copyright &copy; 2019
-        </footer>
+    <footer id="main-footer">
+        Copyright &copy; 2019
+    </footer>
 
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
